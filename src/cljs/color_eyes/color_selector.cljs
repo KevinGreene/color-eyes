@@ -26,7 +26,7 @@
               #(change-color-value rgba :a (js/parseInt (-> % .-target .-value)))}]
      [:div.color-display
       [:div.color-box
-       {:style {:color css-color}}]]
+       {:style {:background-color css-color}}]]
      [:p (str css-color)]])
   )
 
