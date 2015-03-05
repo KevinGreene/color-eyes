@@ -9,10 +9,7 @@
 
 (defn selector-component [rgba]
   (let [color-map @rgba
-        r (:r color-map)
-        g (:g color-map)
-        b (:b color-map)
-        a (:a color-map)
+        {:keys [r g b a]} color-map
         css-color (color-util/css-from-color-map color-map)]
     [:div.color-selector
      [:input {:type "number" :value r
