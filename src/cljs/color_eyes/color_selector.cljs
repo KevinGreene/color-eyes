@@ -27,10 +27,9 @@
      [:input {:type "number" :value a
               :on-change
               #(change-color-value rgba :a (js/parseInt (-> % .-target .-value)))}]
-     (if (> r 130)
-       [:div.color-display
-        [:div.color-box
-         {:style {:color css-color}}]])
+     [:div.color-display
+      [:div.color-box
+       {:style {:color css-color}}]]
      [:p (str css-color)]])
   )
 
