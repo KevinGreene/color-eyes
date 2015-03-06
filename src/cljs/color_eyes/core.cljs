@@ -11,7 +11,8 @@
 
 ;; -------------------------
 ;; Views
-(def color (atom {:r 0 :g 120 :b 0 :a 1}))
+(def color (atom {:r 0 :g 120 :b 0}))
+(def complimentary-colors (atom []))
 
 (defn home-page []
   [:div [:h2 "Welcome to color-eyes"]
