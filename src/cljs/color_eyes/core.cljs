@@ -5,8 +5,7 @@
             [goog.events :as events]
             [goog.history.EventType :as EventType]
             [cljsjs.react :as react]
-            [color-eyes.color-selector :as selector]
-            [color-eyes.util :as color-util])
+            [color-eyes.color-selector :as selector])
   (:import goog.History))
 
 ;; -------------------------
